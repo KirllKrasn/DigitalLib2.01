@@ -1,0 +1,29 @@
+﻿<Window x:Class="DigitalLib2._0.bookAdder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DigitalLib2._0"
+        mc:Ignorable="d"
+        Title="bookAdder" Height="550" Width="400">
+    <Grid Background="#FF333333">
+        <Label x:Name="tbInfo" Margin="0,323,0,187" Content="" Background="White" FontSize="8" HorizontalAlignment="Center" Width="380"/>
+        <Label Margin="95,105,105,95">Автор:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbAuthor" Margin="0,112,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Margin="108,130,108,95">Год:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbYear" Margin="0,135,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Margin="75,153,108,95">Название:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbName" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Margin="75,177,108,95">Издатель:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbPublisher" Margin="0,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Margin="96,200,108,95">Жанр:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbGenre" Margin="0,204,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Margin="70,222,108,95">Категория:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbCategory" Margin="0,227,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Margin="33,245,108,95">Возрастной ценз:</Label>
+        <TextBox HorizontalAlignment="Center" Name="TbCensure" Margin="0,250,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ChooseBook" Content="Выбрать книгу" HorizontalAlignment="Center" Margin="0,273,0,0" VerticalAlignment="Top" Width="91" Click="ChooseBook_Click"/>
+        <Button x:Name="AddBook" Content="Добавить книгу" HorizontalAlignment="Center" Margin="0,298,0,0" VerticalAlignment="Top" Click="AddBook_Click"/>
+
+    </Grid>
+</Window>
